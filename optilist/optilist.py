@@ -78,11 +78,13 @@ if __name__ == "__main__":
     #pasta, 0.50€/pack of 500g, 2(pack of 500g), 4(pack of 500g)
     #cheese, 2.19€/bag of 100g, 1(bag of 100g), 1(bag of 100g)
     #budget: 50€
+    
     df = pd.DataFrame([['tomato(kg)', 3.49, 1, 2],
                        ['pasta(500g pack)', 0.5, 2, 4],
                        ['cheese(100g bag)', 2.19, 1, 1]],
                        columns=['name', 'price', 'min', 'max'])
-    groceries = GroceryList(20, df)
+    df2 = file_reader("~/Documents/test.csv")
+    groceries = GroceryList(50, df)
     groceries.create_model()
     groceries.get_price()
 

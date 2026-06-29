@@ -12,6 +12,8 @@ temporary list of used dependencies (will be rewritten and completed)
 - [ ] Add installation instructions (and conda env .yml file)
 - [x] Have something working
 - [ ] Add nicer looking visuals (output .md table, GUI(unlikely) or csv-like file)
+- [ ] Add more interesting constraints
+
 ### How to format the csv file
 Here are the required columns:
 - *name*: a string representing your item's name.
@@ -22,5 +24,5 @@ Here are the required columns:
 Notes: 
 - The file can contain more columns than required if it was used for other purposes, the program will simply ignore them.
 - The use of floating point for the price assumes your currency has decimal parts similar to euro or dollars. If not, you will simply have to use it like an integer or convert it to a currency using this format. I would recommend conversion as a general fix but if your currency doesn't reach high values, the first solution can work.
-
+- The program will always pick the least amount of items as no other constraint forces it to do other things. This is pretty much useless for now and more constraints will be added in the future to actually make it interesting (minimum calories, storage capacity etc.). 
 
