@@ -14,7 +14,7 @@ temporary list of used dependencies (will be rewritten and completed)
 - [ ] Add nicer looking visuals (output .md table, GUI(unlikely) or csv-like file)
 ### How to format the csv file
 Here are the required columns:
-- *name*: a string representing youR item'S name.
+- *name*: a string representing your item's name.
 - *price*: a floating point value representing the item's monetary value.
 - *min*(can be empty): the minimum quantity of items that should be bought.
 - *max*(can be empty): the maximum quantity of items that should be bought.
